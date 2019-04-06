@@ -1,0 +1,21 @@
+{
+	"name": "GoPro",
+	"displayName": "GoPro",
+	"description": "GoPro is a snippet library for competitive programming in golang",
+	"version": "1.0.0",
+	"publisher": "Girish Kumar",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "go",
+				"path": "./snippets.json"
+			}
+		]
+	}
+}

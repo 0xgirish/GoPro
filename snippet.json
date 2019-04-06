@@ -1,0 +1,146 @@
+{
+	"Competitive programming": {
+		"prefix": "gopro",
+		"body": [
+			"// Author  : ${1:ninja}",
+			"// Date    : $CURRENT_DAY_NAME, $CURRENT_DATE $CURRENT_MONTH_NAME $CURRENT_YEAR_SHORT",
+			"package main",
+			"",
+			"import (",
+				"\t\"bufio\"",
+				"\t\"fmt\"",
+				"\t\"os\"",
+			")",
+			"",
+			"var (",
+				"\treader = bufio.NewReader(os.Stdin)",
+				"\twriter = bufio.NewWriter(os.Stdout)",
+			")",
+			"",
+			"func printf(f string, a ...interface{}) { fmt.Fprintf(writer, f, a...) }",
+			"func scanf(f string, a ...interface{})  { fmt.Fscanf(reader, f, a...) }",
+			"",
+			"func main() {",
+				"\t// handle testcase",
+				"\tT := 1",
+				"\t// scan testcases",
+				"\tscanf(\"%d\\n\", &T)",
+				"\tdefer writer.Flush()",
+				"\tfor t := 1; t <= T; t++ {",
+					"\t\t// do stuff",
+					"\t\t$0",
+				"\t}",
+			"}",
+			""
+		],
+		"description": "competitive programming snippet"
+	},
+
+	"set data-structure": {
+		"prefix": "goset",
+		"body": [
+			"type set map[${1:int}]bool",
+			"",
+			"func (s set) Add(v ${1:int}) {",
+				"\ts[v] = true",
+			"}",
+			"",
+			"func (s set) Delete(v ${1:int}) {",
+				"\tdelete(s, v)",
+			"}",
+			"$0",
+		],
+		"description": "set data-structure using map[type]bool"
+	},
+
+	"queue data-structure": {
+		"prefix": "goqueue",
+		"body": [
+			"type queue []${1:int}",
+			"",
+			"func (q *queue) Push(v ${1:int}) {",
+				"\t*q = append(*q, v)",
+			"}",
+			"",
+			"func (q *queue) Pop() ${1:int} {",
+				"\tres := (*q)[0]",
+				"\t*q = (*q)[1:]",
+				"\treturn res",
+			"}",
+			"$0"
+		],
+		"description": "queue data-structure using slice"
+	},
+
+	"stack data-structure": {
+		"prefix": "gostack",
+		"body": [
+			"type stack []${1:int}",
+			"",
+			"func (s *stack) Push(v ${1:int}) {",
+				"\t*s = append(*s, v)",
+			"}",
+			"",
+			"func (s *stack) Pop() ${1:int} {",
+				"\tsize := len(*s)",
+				"\tres := (*s)[size-1]",
+				"\t*s = (*s)[0:size-1]",
+				"\treturn res",
+			"}",
+			"$0"
+		],
+		"description": "stack data structure using slice"
+	},
+
+	"graph data-structure": {
+		"prefix": "gograph",
+		"body": [
+			"",
+			"//TODO: import set",
+			"//use goset snippet",
+			"type graph map[${1:int}]set",
+			"",
+			"func (g graph) Edge(u, v ${1:int}) {",
+				"\tif g[u] == nil {",
+					"\t\tg[u] = make(set)",
+				"\t}",
+				"\tg[u].Add(v)",
+			"}",
+			"",
+			"func (g graph) rEdge(u, v ${1:int}) {",
+				"\tg[u].Delete(v)",
+			"}",
+			"$0"
+		],
+		"description": "graph data-structure using map[type]set"
+	},
+
+	"bfs(or dfs) algorithm": {
+		"prefix": "gofs",
+		"body": [
+			"//TODO: import queue(or stack) and graph",
+			"//ues goqueue(or gostack) and gograph snippet",
+			"func (g graph) bfs(start ${1:int}) {",
+				"\tvisited := make(map[${1:int}]bool)",
+				"\tvisited[start] = true",
+				"\tvar ds ${2:queue}",
+			"",
+				"\tds.Push(start)",
+				"\tfor len(ds) != 0 {",
+					"\t\tu := ds.Pop()",
+					"\t\t// do something",
+					"\t\t$0",
+					"\t\tfor v := range g[u] {",
+						"\t\t\tif !visited[v] {",
+							"\t\t\t\tvisited[v] = true",
+							"\t\t\t\tds.Push(v)",
+						"\t\t\t}",
+					"\t\t}",
+				"\t}",
+			"}",
+			""
+		],
+		"description": "bfs(or dfs) algorithm defined on graph"
+	}
+
+}

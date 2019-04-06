@@ -48,7 +48,7 @@
 			"func (s set) Delete(v ${1:int}) {",
 				"\tdelete(s, v)",
 			"}",
-			"$0",
+			"$0"
 		],
 		"description": "set data-structure using map[type]bool"
 	},

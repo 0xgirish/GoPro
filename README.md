@@ -4,12 +4,12 @@ The main purpose of this extension is to provide competitive programming snippet
 You may be thinking who do competitive programming in golang. Well I do ;)
 
 ## Availiable snippet
-    - gopro - basic starter file with buffered printf and scanf with testcase loop.
-    - goset - set data-structure in golang.
-    - gostack - stack data-structure.
-    - goqueue - queue data-structure.
-    - gograph - graph data-structure snippet(required set data-structure e.g. goset).
-    - gofs - bfs(or dfs) algorithm snippet(required graph and queue(or stack) snippet).
+    1. gopro - basic starter file with buffered printf and scanf with testcase loop.
+    2. goset - set data-structure in golang.
+    3. gostack - stack data-structure.
+    4. goqueue - queue data-structure.
+    5. gograph - graph data-structure snippet(required set data-structure e.g. goset).
+    6. gofs - bfs(or dfs) algorithm snippet(required graph and queue(or stack) snippet).
 
 ## Running the Sample
 

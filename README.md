@@ -1,6 +1,6 @@
 ## GoPro
 This extension is mainly for my personal use but others are welcome to use it as well.
-The main purpose of this extension is to provide competitive programming snippet for golang.
+The main purpose of this extension is to provide competitive programming snippets for golang.
 You may be thinking who do competitive programming in golang. Well I do ;)
 
 ## Availiable snippet

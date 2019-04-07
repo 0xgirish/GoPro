@@ -10,7 +10,8 @@
 		"url": "https://github.com/girishkmr/GoPro"
 	},
 	"engines": {
-		"vscode": "^1.28.0"
+		"vscode": "^1.28.0",
+		"atom": ">=1.0.0 <2.0.0"
 	},
 	"categories": [
 		"Snippets"

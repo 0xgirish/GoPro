@@ -2,7 +2,7 @@
 	"name": "GoPro",
 	"displayName": "GoPro",
 	"description": "GoPro is a snippet library for competitive programming in golang",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "girishkmr",
 	"icon": "gopro-logo.png",
 	"repository": {
@@ -10,8 +10,7 @@
 		"url": "https://github.com/girishkmr/GoPro"
 	},
 	"engines": {
-		"vscode": "^1.28.0",
-		"atom": ">=1.0.0 <2.0.0"
+		"vscode": "^1.28.0"
 	},
 	"categories": [
 		"Snippets"

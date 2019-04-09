@@ -10,6 +10,7 @@ You may be thinking who do competitive programming in golang. Well I do ;)
     4. goqueue - queue data-structure.
     5. gograph - graph data-structure snippet(required set data-structure e.g. goset).
     6. gofs - bfs(or dfs) algorithm snippet(required graph and queue(or stack) snippet).
+    7. goheap - min heap data-structure snippet, require "container/heap".
 
 ## Running the Sample
 

@@ -149,6 +149,33 @@
 			""
 		],
 		"description": "bfs(or dfs) algorithm defined on graph"
-	}
+	},
+
+	"min heap in golang": {
+		"prefix": "goheap",
+		"body": [
+			"// import \"container/heap\"",
+			"type ${2:Heap} []${1:int}",
+			"",
+			"func (h ${2:Heap}) Len() int           { return len(h) }",
+			"func (h ${2:Heap}) Less(i, j int) bool { return h[i] < h[j] }",
+			"func (h ${2:Heap}) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }",
+			"",
+			"// Push push the element into heap",
+			"func (h *${2:Heap}) Push(x interface{}) {",
+				"\t*h = append(*h, x.(${1:int}))",
+			"}",
+			"",
+			"// Pop pop the element from heap",
+			"func (h *${2:Heap}) Pop() interface{} {",
+				"\tn := len(*h)",
+				"\tx := (*h)[n-1]",
+				"\t*h = (*h)[0 : n-1]",
+				"\treturn x",
+			"}",
+			""
+		],
+		"description": "min heap data-structure in golang\nchange Less to make it max Heap or priority queue"
+	},
 
 }
